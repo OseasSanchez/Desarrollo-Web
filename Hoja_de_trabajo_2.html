@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .titulo-y-texto {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #carouselExampleCaptions {
+      max-width: 40%; 
+      margin: 0 auto; 
+    }
+
+    .carousel-inner {
+      max-height: 80vh; 
+    }
+
+    .carousel-item {
+      height: 100%; 
+    }
+    p {
+      color: blue; 
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: red; 
+    }
+  </style>
+<body>
+    <center><h1>Base de Datos 1</h1></center>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://www.marcossarmiento.com/wp-content/uploads/2017/06/1FN.png" class="d-block w-100" alt="...">
+      <!--
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Primera Forma Normal</h5>
+        <p>La primera forma normal significa que los datos están en un formato de entidad, lo que significa que se han cumplido las siguientes condiciones:
+
+            1. Eliminar grupos repetidos en tablas individuales
+            2. Crear una tabla independiente para cada conjunto de datos relacionados
+            3. Identificar cada conjunto de relacionados con la clave principal</p>
+      </div>
+    -->
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.marcossarmiento.com/wp-content/uploads/2017/06/2FN.png" class="d-block w-100" alt="...">
+      <!--
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Auditoría de Sistemas</h5>
+        <p>El auditor informático es el encargado de llevara cabo auditorías de sistemas de información o auditorías TI que tienen como objetivo mejorar, gestionar y sostener los procesos de TI y de negocio y lo hacen ofreciendo soluciones pragmáticas. </p> 
+    </div>
+-->
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.marcossarmiento.com/wp-content/uploads/2017/06/3FN.png" class="d-block w-100" alt="...">
+      <!--
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Derecho Informático</h5>
+        <p>Nos da a conocer las leyes que pueden llegar a afectar la creación de un software, entre ellas podríamos mencionar las leyes que impliquen manipular la información sensible de las personas, la forma en la que podemos manipular la información personal recabada y su uso interno en la empresa.</p>
+      </div>
+    -->
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+
+  <div class="contenido-dinamico">
+    <label for="slide1">
+      <h5>Primera Forma Normal</h5>
+      <p>La primera forma normal significa que los datos están en un formato de entidad, lo que significa que se han cumplido las siguientes condiciones:
+
+        <br>1. Eliminar grupos repetidos en tablas individuales
+        <br>2. Crear una tabla independiente para cada conjunto de datos relacionados
+        <br>3. Identificar cada conjunto de relacionados con la clave principal</p>
+    </label>
+
+    <label for="slide2">
+      <h5>Segunda Forma Normal</h5>
+      <p>Asegura que cada atributo describe la entidad.
+        <br>1. Crear tablas separadas para el conjunto de valores y los registros múltiples, estas tablas se deben relacionar con una clave externa.
+        <br>2. Los registros no deben depender de otra cosa que la clave principal de la tabla, incluida la clave compuesta si es necesario.</p>
+    </label>
+
+    <label for="slide3">
+      <h5>Tercera Forma Normal</h5>
+      <p>Comprueba las dependencias transitivas, eliminando campos que no dependen de la clave principal.
+        <br>1. Los valores que no dependen de la clave principal no pertenecen a la tabla
+        <br>2. Los campos que no pertenecen a la clave principal colóquelos en una tabla aparte y relacionen ambas tablas por medio de una clave externa.</p>
+    </label>
+
+</div>
+    
+</body>
+</html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
